@@ -24,13 +24,7 @@ public class Contest extends BaseEntity{
         this.creator = creator;
         this.contestStatus = contestStatus;
     }
-    // TODO: CRIO_TASK_MODULE_ENTITIES
-    // Complete the validateQuestionList method to verify if all the questions have the same level and are equal to contest level.
-    // Throw InValidContestException if the above condition is not true. This will stop the Object Creation.
-    //  Note:
-    //  1. There can be few unused imports, you will need to fix them to make the build pass.
-    //  2. You can use "./gradlew build" to check if your code builds successfully.
-
+    
     private void validateQuestionList(List<Question> qList, Level contestLevel) throws InvalidContestException {
 
         for (Question iterate : qList) {
