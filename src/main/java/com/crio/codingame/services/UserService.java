@@ -3,8 +3,6 @@ package com.crio.codingame.services;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-
 import com.crio.codingame.dtos.UserRegistrationDto;
 import com.crio.codingame.entities.Contest;
 import com.crio.codingame.entities.ContestStatus;
@@ -26,18 +24,12 @@ public class UserService implements IUserService {
         this.userRepository = userRepository;
         this.contestRepository = contestRepository;
     }
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Create and store User into the repository.
+    
     @Override
     public User create(String name) {
         User createUser = new User(name, 0);
         return userRepository.save(createUser);
     }
-
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Get All Users in Ascending Order w.r.t scores if ScoreOrder ASC.
-    // Or
-    // Get All Users in Descending Order w.r.t scores if ScoreOrder DESC.
 
     @Override
     public List<User> getAllUserScoreOrderWise(ScoreOrder scoreOrder){

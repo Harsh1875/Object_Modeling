@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.crio.codingame.entities.Contest;
@@ -37,10 +36,6 @@ public class ContestRepository implements IContestRepository {
         contestMap.put(entity.getId(),entity);
         return entity;
     }
-
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Find all the list of Contest Present in the Repository
-    // Tip:- Use Java Streams
 
     @Override
     public List<Contest> findAll() {
@@ -75,10 +70,6 @@ public class ContestRepository implements IContestRepository {
         // TODO Auto-generated method stub
         return contestMap.size();
     }
-
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Find all the list of Contest Present in the Repository provided Level
-    // Tip:- Use Java Streams
 
     @Override
     public List<Contest> findAllContestLevelWise(Level level) {

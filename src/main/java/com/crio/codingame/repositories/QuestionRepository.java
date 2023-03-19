@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.crio.codingame.entities.Level;
@@ -36,10 +35,6 @@ public class QuestionRepository implements IQuestionRepository {
         questionMap.put(entity.getId(),entity);
         return entity;
     }
-
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Find all the list of Question Present in the Repository
-    // Tip:- Use Java Streams
 
     @Override
     public List<Question> findAll() {
@@ -78,10 +73,6 @@ public class QuestionRepository implements IQuestionRepository {
         // TODO Auto-generated method stub
         return questionMap.size();
     }
-
-    // TODO: CRIO_TASK_MODULE_SERVICES
-    // Find all the list of Question Present in the Repository provided Level
-    // Tip:- Use Java Streams
 
     @Override
     public List<Question> findAllQuestionLevelWise(Level level) {

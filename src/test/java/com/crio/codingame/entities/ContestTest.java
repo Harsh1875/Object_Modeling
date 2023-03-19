@@ -13,6 +13,12 @@ import org.junit.jupiter.api.Test;
 public class ContestTest {
 
 
+   // TODO: WARNING!!!
+   //  DO NOT MODIFY ANY FILES IN THE TESTS/ ASSESSMENTS UNLESS ASKED TO.
+   //  Any modifications in this file may result in Assessment failure!
+
+
+
    @Test
    @DisplayName("#1 Contest should throw InvalidContestException if any Question Level in the List is not equal to Contest Level")
    public void contest_ShouldThrowInvalidContestException_GivenInvalidQuestionList(){

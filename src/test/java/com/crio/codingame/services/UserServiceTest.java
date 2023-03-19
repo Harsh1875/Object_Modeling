@@ -62,7 +62,6 @@ public class UserServiceTest {
 
         //Act
         User actualUser = userService.create("Yakshit");
-        
         //Assert
         Assertions.assertEquals(expectedUser,actualUser);
         verify(userRepositoryMock,times(1)).save(any(User.class));
